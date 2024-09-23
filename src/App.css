@@ -1,0 +1,104 @@
+/* App.css */
+
+ body {
+  height: 100%; /* Asegura que el body ocupe toda la pantalla */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: space-between; /* Para que los dos bloques estén separados */
+  align-items: flex-start; /* Alineación superior de las columnas */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.estructura-productos, .estructura-seleccionados {
+  flex: 1; /* Las columnas ocuparán el mismo espacio */
+  margin: 0 20px; /* Espacio entre las columnas */
+}
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: black;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: lightblue;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #45a049;
+  transition: 0.2s ease-in-out;
+
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+button:focus {
+  outline: none;
+}
+
+.total-price {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: right;
+  color: green;
+  
+}
+
+.remove-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.remove-button:hover {
+  background-color: #e64a19 ;
+  transition: 0.2s ease-in-out;
+}
+
+.remove-button:active {
+  background-color: #d84315;
+}
